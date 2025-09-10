@@ -71,6 +71,9 @@
 &nand {
 	status = "okay";
 
+	nand-ecc-step-size = <512>;
+	nand-ecc-strength = <8>;
+
 	partitions {
 		compatible = "fixed-partitions";
 		#address-cells = <1>;
